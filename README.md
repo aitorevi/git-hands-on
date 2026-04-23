@@ -16,12 +16,25 @@ Imagina que tú y tres compañeros/as estáis construyendo con LEGO, pero cada u
 
 ## 📚 Tabla de Contenidos
 
+### Fundamentos
+
 | Ejercicio | Tema | Tiempo estimado |
 |-----------|------|----------------|
 | [01 - Mi Primer Commit](./01-mi-primer-commit/README.md) | Staging Area y commits con sentido | 20 min |
 | [02 - Ramas y Universos](./02-ramas-y-universos/README.md) | Crear y navegar entre ramas | 20 min |
 | [03 - Trabajo en Equipo](./03-trabajo-en-equipo/README.md) | Push, Pull y Pull Requests | 25 min |
 | [04 - El Temido Conflicto](./04-el-temido-conflicto/README.md) | Provocar y resolver conflictos | 30 min |
+
+### Nivel Intermedio
+
+| Ejercicio | Tema | Tiempo estimado |
+|-----------|------|----------------|
+| [05 - Reset: Las Tres Variantes](./05-reset-las-tres-variantes/README.md) | `--soft`, `--mixed` y `--hard` | 25 min |
+| [06 - Checkout vs Switch](./06-checkout-vs-switch/README.md) | Equivalencias y el modo Detached HEAD | 20 min |
+| [07 - Diff y Log](./07-diff-y-log/README.md) | Inspeccionar cambios e historial | 20 min |
+| [08 - Stash](./08-stash/README.md) | Guardar trabajo sin hacer commit | 20 min |
+| [09 - Cherry-pick](./09-cherry-pick/README.md) | Copiar commits selectivamente entre ramas | 25 min |
+| [10 - Rebase y Squash](./10-rebase-y-squash/README.md) | Historial lineal y commits limpios | 35 min |
 
 ---
 
@@ -36,11 +49,20 @@ Si alguna vez estás perdido/a, esta tabla es tu ancla.
 | `git add .` | Prepara **todos** los cambios para el commit |
 | `git commit -m "mensaje"` | Guarda la foto del estado actual |
 | `git log --oneline` | Ver el historial de commits en resumen |
+| `git log --oneline --graph --all` | Historial con gráfico de ramas |
+| `git diff` | Ver cambios no preparados aún |
+| `git diff --cached` | Ver cambios ya en Staging Area |
 | `git branch` | Ver en qué rama estás |
 | `git switch -c <nombre>` | Crear una nueva rama y saltar a ella |
 | `git switch <nombre>` | Saltar a una rama que ya existe |
 | `git pull` | Traer los cambios del repositorio remoto |
 | `git push` | Enviar tus cambios al repositorio remoto |
+| `git stash` | Guardar cambios en el cajón temporalmente |
+| `git stash pop` | Recuperar los cambios del cajón |
+| `git reset --soft HEAD~1` | Deshacer el último commit (cambios en Staging) |
+| `git reset --hard HEAD~1` | ⚠️ Deshacer el último commit borrando los cambios |
+| `git rebase <rama>` | Replanta tu rama sobre otra |
+| `git cherry-pick <hash>` | Copiar un commit concreto a tu rama actual |
 
 > 💡 **Regla de oro:** ante la duda, ejecuta `git status`. Siempre. Te dirá exactamente dónde estás y qué puedes hacer a continuación.
 
