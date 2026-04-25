@@ -1,6 +1,6 @@
-# 🚀 Git para Humanos: De Cero a Pull Request
+# 🚀 Git Hands-on
 
-Bienvenido/a al taller de Git de LeanMind. Si estás aquí, probablemente acabas de escuchar palabras como "commit", "rama" o "conflicto" y no sabes muy bien qué significan. No te preocupes, ese es exactamente el punto de partida correcto.
+Bienvenido/a al taller de Git. Si estás aquí, probablemente acabas de escuchar palabras como "commit", "rama" o "conflicto" y no sabes muy bien qué significan. No te preocupes, ese es exactamente el punto de partida correcto.
 
 ---
 
